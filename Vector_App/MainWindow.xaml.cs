@@ -70,5 +70,11 @@ namespace Vector_App
 				TextBox_Bin.Text += Convert.ToString(array[i]);
 
 		}
+
+		private void ButtonCopy_Bin_Click(object sender, RoutedEventArgs e)
+		{
+			Clipboard.Clear();
+			Clipboard.SetText(TextBox_Bin.Text);
+		}
 	}
 }

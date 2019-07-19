@@ -13,5 +13,6 @@
 		<ComboBox x:Name="Combobox_lenght" HorizontalAlignment="Left" Margin="317,244,0,0" VerticalAlignment="Top" Width="60" IsEditable="True"/>
 		<Button Content="Генерация" HorizontalAlignment="Left" Margin="500,241,0,0" VerticalAlignment="Top" Width="75" Height="24" Click="Button_Click"/>
 		<TextBox x:Name="TextBox_Bin" HorizontalAlignment="Left" Height="23" Margin="103,60,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="150"/>
+		<Button x:Name="ButtonCopy_Bin" Content="Копировать в буфер обмена" HorizontalAlignment="Left" Margin="273,63,0,0" VerticalAlignment="Top" Width="177" Click="ButtonCopy_Bin_Click"/>
 	</Grid>
 </Window>

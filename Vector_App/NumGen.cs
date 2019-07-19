@@ -15,7 +15,7 @@ namespace Vector_App
 		public int probabilityGen()
 		{
 			rng.GetBytes(data);
-			float rng_num = (BitConverter.ToUInt32(data, 0) / (float)4294967295.0) * 100;
+			float rng_num = BitConverter.ToUInt32(data, 0) / (float)4294967295.0 * 100;
 			return (int)rng_num;
 		}
 	}
