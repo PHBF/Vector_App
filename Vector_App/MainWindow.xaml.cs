@@ -38,7 +38,7 @@ namespace Vector_App
 
 		private byte VectorPart_Gen(ref int n, int N)
 		{
-			int percent = Convert.ToInt32((n / N) * 100);
+			int percent = Convert.ToInt32(((float)n / (float)N) * 100);
 			int probability = Gen.probabilityGen();
 			if ((probability < percent) && (n != 0))
 			{
@@ -46,6 +46,7 @@ namespace Vector_App
 				return 1;
 			}
 			else return 0;
+			
 		}
 
 		private void Button_Click(object sender, RoutedEventArgs e)
@@ -62,7 +63,7 @@ namespace Vector_App
 				}
 				else
 				{
-					array[i] = VectorPart_Gen(ref n, N);
+					array[i] = VectorPart_Gen(ref n, N - (i + 1)); ;
 				}
 			}
 			for (int i = 0; i < N; i++)
