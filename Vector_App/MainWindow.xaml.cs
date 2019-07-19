@@ -29,7 +29,7 @@ namespace Vector_App
 
 		private void Window_Loaded(object sender, RoutedEventArgs e)
 		{
-			for (int i = 0; i <= 100; i++)
+			for (int i = 1; i <= 100; i++)
 			{
 				Combobox_lenght.Items.Add(i);
 				Combobox_num.Items.Add(i);
