@@ -5,12 +5,13 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Vector_App"
         mc:Ignorable="d"
-        Title="MainWindow" Height="304" Width="631">
+        Title="MainWindow" Height="304" Width="631" Loaded="Window_Loaded">
 	<Grid>
 		<ComboBox x:Name="Combobox_num" HorizontalAlignment="Left" Margin="130,244,0,0" VerticalAlignment="Top" Width="60" IsEditable="True"/>
 		<Label Content="Количество единиц:" HorizontalAlignment="Left" Margin="9,240,0,0" VerticalAlignment="Top"/>
 		<Label Content="Длинна вектора:" HorizontalAlignment="Left" Margin="216,240,0,0" VerticalAlignment="Top"/>
 		<ComboBox x:Name="Combobox_lenght" HorizontalAlignment="Left" Margin="317,244,0,0" VerticalAlignment="Top" Width="60" IsEditable="True"/>
-		<Button Content="Генерация" HorizontalAlignment="Left" Margin="468,243,0,0" VerticalAlignment="Top" Width="75"/>
+		<Button Content="Генерация" HorizontalAlignment="Left" Margin="500,241,0,0" VerticalAlignment="Top" Width="75" Height="24" Click="Button_Click"/>
+		<TextBox x:Name="TextBox_Bin" HorizontalAlignment="Left" Height="23" Margin="103,60,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
 	</Grid>
 </Window>
